@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EduLearn</title>
+    <link rel="stylesheet" href="layouts.css">
+    <style>
+        /* Contact section */
+        .contact {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .contact h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        /* Info kontak */
+        .contact-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* Form */
+        .contact-form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .contact-form button {
+            background: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar dinamis -->
+    <div id="navbar"></div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Hubungi kami untuk pertanyaan, kerjasama, atau informasi lebih lanjut.</p>
+
+        <div class="contact-container">
+            <!-- Info kontak -->
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <p><strong>Alamat:</strong> Jl. Pendidikan No.123, Jakarta</p>
+                <p><strong>Email:</strong> info@edulearn.com</p>
+                <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form">
+                <h2>Kirim Pesan</h2>
+                <form action="#" method="post">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer dinamis -->
+    <div id="footer"></div>
+
+    <script src="layouts.js"></script>
+</body>
+</html>

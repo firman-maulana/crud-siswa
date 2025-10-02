@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - About</title>
+    <link rel="stylesheet" href="layouts.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .vision-mission {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            flex: 1 1 45%;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .team {
+            text-align: center;
+        }
+
+        .team h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .member {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .member h3 {
+            margin: 10px 0 5px;
+            color: #2c3e50;
+        }
+
+        .member p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Dinamis -->
+    <div id="navbar"></div>
+
+    <!-- Konten About -->
+    <main>
+        <h1>Tentang EduLearn</h1>
+        <p class="intro">
+            EduLearn adalah platform edukasi modern yang dirancang untuk membantu siswa, mahasiswa,
+            maupun masyarakat umum belajar lebih mudah dan fleksibel di era digital.
+        </p>
+
+        <!-- Visi Misi -->
+        <div class="vision-mission">
+            <div class="box">
+                <h2>Visi</h2>
+                <p>
+                    Menjadi platform pembelajaran online terbaik di Indonesia yang menyediakan akses
+                    ilmu pengetahuan secara mudah, berkualitas, dan terjangkau.
+                </p>
+            </div>
+            <div class="box">
+                <h2>Misi</h2>
+                <ul>
+                    <li>Menyediakan kursus berkualitas dengan pengajar ahli.</li>
+                    <li>Mendorong pembelajaran fleksibel berbasis teknologi.</li>
+                    <li>Menghubungkan siswa dengan komunitas pembelajar.</li>
+                    <li>Meningkatkan keterampilan untuk masa depan yang lebih baik.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tim Pengajar -->
+        <div class="team">
+            <h2>Tim Pengajar Kami</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pengajar 1">
+                    <h3>Dr. Andi Pratama</h3>
+                    <p>Pakar Pemrograman</p>
+                </div>
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Pengajar 2">
+                    <h3>Budi Santoso, M.Pd</h3>
+                    <p>Pakar Pendidikan</p>
+                </div>
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Pengajar 3">
+                    <h3>Ir. Firman Nugraha</h3>
+                    <p>Pakar Desain Grafis</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Dinamis -->
+    <div id="footer"></div>
+
+    <!-- Script Navbar & Footer -->
+    <script src="layouts.js"></script>
+</body>
+
+</html>

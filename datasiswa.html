@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Siswa - Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>Data Siswa</h1>
+        <p>Halo, <strong>Admin 1</strong></p>
+      </div>
+      <div>
+        <a href="login.html" class="btn btn-gray">Logout</a>
+        <a href="tambah.html" class="btn btn-blue">+ Tambah Siswa</a>
+      </div>
+    </div>
+
+    <!-- Tabel -->
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Budi Santoso</td>
+          <td>X IPA 1</td>
+          <td>
+            <a href="edit.html" class="btn btn-yellow">Edit</a>
+            <a href="delete.html" class="btn btn-red">Hapus</a>
+          </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Muhammad Faris</td>
+            <td>X IPA 3</td>
+            <td>
+                <a href="edit.html" class="btn btn-yellow">Edit</a>
+                <a href="delete.html" class="btn btn-red">Hapus</a>
+                <button class="btn-btn-red" onclick="window.location.href='edit.html'">edit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Siti Aisyah</td>
+          <td>X IPA 2</td>
+          <td>
+            <a href="edit.html" class="btn btn-yellow">Edit</a>
+            <a href="delete.html" class="btn btn-red">Hapus</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

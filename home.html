@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Home</title>
+    <link rel="stylesheet" href="layouts.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), 
+                        url("https://images.unsplash.com/photo-1523580494863-6f3031224c94") center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .hero a {
+            background-color: #1abc9c;
+            padding: 12px 25px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .hero a:hover {
+            background-color: #16a085;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #ecf0f1;
+            text-align: center;
+        }
+        .feature-box {
+            background: white;
+            padding: 25px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        .feature-box h3 {
+            color: #2c3e50;
+        }
+        .feature-box p {
+            color: #555;
+        }
+
+        /* Courses Preview */
+        .courses {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .courses h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #2c3e50;
+        }
+        .course-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .course-card {
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+        .course-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .course-card h3 {
+            margin: 15px 0 10px;
+            color: #2c3e50;
+        }
+        .course-card p {
+            color: #555;
+            padding: 0 15px 20px;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        footer a {
+            color: #1abc9c;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Dinamis -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to EduLearn</h1>
+        <p>Belajar lebih mudah, kapan saja, di mana saja.</p>
+        <a href="courses.html">Explore Courses</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <h3>📚 Materi Lengkap</h3>
+            <p>Akses ratusan kursus dan materi edukatif berkualitas.</p>
+        </div>
+        <div class="feature-box">
+            <h3>👨‍🏫 Pengajar Ahli</h3>
+            <p>Belajar langsung dari para profesional berpengalaman.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🎯 Belajar Fleksibel</h3>
+            <p>Tentukan jadwal belajar sesuai kebutuhan Anda.</p>
+        </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section class="courses">
+        <h2>Kursus Populer</h2>
+        <div class="course-list">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Course 1">
+                <h3>Dasar Pemrograman</h3>
+                <p>Belajar konsep dasar coding dengan cara sederhana.</p>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1581091870622-1c1a8f1a7b0b" alt="Course 2">
+                <h3>Desain Grafis</h3>
+                <p>Kuasai teknik desain modern untuk media digital.</p>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1584697964403-5231f2c34e6a" alt="Course 3">
+                <h3>Bahasa Inggris</h3>
+                <p>Tingkatkan kemampuan bahasa untuk masa depan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Dinamis -->
+    <div id="footer"></div>
+
+    <!-- Panggil JS Navbar & Footer -->
+    <script src="layouts.js"></script>
+</body>
+</html>

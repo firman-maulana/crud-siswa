@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Courses</title>
+    <link rel="stylesheet" href="layouts.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .course-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .course-card .content {
+            padding: 15px;
+        }
+
+        .course-card h3 {
+            margin: 10px 0;
+            color: #2c3e50;
+            font-size: 20px;
+        }
+
+        .course-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .course-card a {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .course-card a:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Dinamis -->
+    <div id="navbar"></div>
+
+    <!-- Konten Courses -->
+    <main>
+        <h1>Daftar Kursus</h1>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1584697964403-5231f2c34e6a" alt="Course 1">
+                <div class="content">
+                    <h3>Pemrograman Dasar</h3>
+                    <p>Pelajari konsep dasar coding menggunakan bahasa pemrograman populer.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Course 2">
+                <div class="content">
+                    <h3>Desain Grafis</h3>
+                    <p>Belajar desain modern dengan tools populer untuk media digital.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1581091870622-1c1a8f1a7b0b" alt="Course 3">
+                <div class="content">
+                    <h3>Bahasa Inggris</h3>
+                    <p>Tingkatkan keterampilan bahasa Inggris Anda untuk dunia global.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Course 4">
+                <div class="content">
+                    <h3>Matematika Lanjutan</h3>
+                    <p>Pelajari konsep matematika tingkat lanjut dengan cara mudah.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Course 5">
+                <div class="content">
+                    <h3>Data Science</h3>
+                    <p>Kuasai dasar-dasar analisis data dan machine learning.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Course 6">
+                <div class="content">
+                    <h3>Digital Marketing</h3>
+                    <p>Pelajari strategi pemasaran online untuk meningkatkan bisnis.</p>
+                    <a href="#">Enroll</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Dinamis -->
+    <div id="footer"></div>
+
+    <!-- Script Navbar & Footer -->
+    <script src="layouts.js"></script>
+</body>
+
+</html>
